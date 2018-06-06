@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyWorkspace.iml" filepath="$PROJECT_DIR$/MyWorkspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linablehelloworld.iml" filepath="$PROJECT_DIR$/linablehelloworld.iml" />
     </modules>
   </component>
 </project>

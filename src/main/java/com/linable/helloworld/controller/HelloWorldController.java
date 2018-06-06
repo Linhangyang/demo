@@ -1,7 +1,7 @@
 package com.linable.helloworld.controller;
 
-import com.linable.helloworld.service.impl.PushA;
 import com.linable.helloworld.service.PushContext;
+import com.linable.helloworld.service.impl.PushA;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,6 +36,11 @@ public class HelloWorldController {
         PushContext push = new PushContext(new PushA(appIdList, extras, content, title));
         push.push();
         return "Hello,World!";
+    }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "Login";
     }
 
 }
