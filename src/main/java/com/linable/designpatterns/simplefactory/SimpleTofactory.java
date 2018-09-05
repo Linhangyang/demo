@@ -4,7 +4,7 @@ package com.linable.designpatterns.simplefactory;
  * @author HangYang.Lin
  *         on 2018-05-31.
  */
-public class SimpleFactory {
+public class SimpleTofactory {
 
     public static void main(String[] args) {
         Pizza pizza = CreatePizza("cheese");
