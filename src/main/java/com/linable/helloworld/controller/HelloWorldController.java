@@ -2,7 +2,9 @@ package com.linable.helloworld.controller;
 
 import com.linable.helloworld.service.PushContext;
 import com.linable.helloworld.service.impl.PushA;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,16 +16,17 @@ import java.util.Map;
  *         on 2017/5/9.
  */
 @RestController
+@Api(description = "课程类型管理")
 public class HelloWorldController {
 
 
 
-    @RequestMapping("/index")
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String sayHello() {
         return "Hello,World!";
     }
 
-    @RequestMapping("/push")
+    @RequestMapping(value = "/push", method = RequestMethod.GET)
     public String push(
         @RequestParam
         String title,
