@@ -22,13 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="linablehelloworld" />
-        <module name="MyWorkspace" />
+        <module name="helloworld" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="linablehelloworld" target="1.6" />
-      <module name="MyWorkspace" target="1.6" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="helloworld" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
